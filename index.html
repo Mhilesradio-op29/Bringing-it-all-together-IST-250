@@ -1,103 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IST 250 Projects</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background-color: #f3f4f6;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
-    .card {
-      background-color: white;
-      border-radius: 0.75rem;
-      box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
-      width: 100%;
-      max-width: 1000px;
-      overflow: hidden;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .brand img {
-      width: 44px;
-      height: 44px;
-      border-radius: 0.5rem;
-      object-fit: cover;
-    }
-    .link-tile {
-      display: block;
-      background-color: #111827;
-      color: white;
-      border-radius: 0.5rem;
-      padding: 1rem 1.125rem;
-      text-decoration: none;
-      transition: transform .08s ease, box-shadow .15s ease, background-color .15s ease;
-      box-shadow: 0 6px 10px -6px rgba(17,24,39,.4);
-    }
-    .link-tile:hover {
-      transform: translateY(-2px);
-      background-color: #0b1220;
-      box-shadow: 0 16px 24px -12px rgba(17,24,39,.4);
-    }
-    .link-tile:focus-visible {
-      outline: 3px solid #2563eb;
-      outline-offset: 3px;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      background: #e0e7ff;
-      color: #3730a3;
-      padding: 0.25rem 0.5rem;
-      border-radius: 9999px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      line-height: 1;
-    }
-    .footer a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-    @media (min-width: 640px) {
-      .hero-title { font-size: 2.25rem }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .link-tile { transition: none }
-      .link-tile:hover { transform: none }
-    }
-  </style>
+  <title>Bringing it all together - IST 250</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <main class="card">
-    <!-- Header/Hero -->
-    <header class="px-6 pt-6 pb-4 sm:px-10 sm:pt-10">
-      <div class="brand">
-        <!-- Uses your uploaded image.png as a small brand mark (optional). Replace/remove if not desired. -->
-        <img src="image.png" alt="Site logo">
-        <div>
-          <h1 class="hero-title text-3xl font-extrabold text-gray-900 tracking-tight">IST 250 Projects</h1>
-          <p class="text-gray-600 mt-1">A collection of course lessons and demos.</p>
-        </div>
-      </div>
-  <!-- Badges and quick hints -->  <div class="flex flex-wrap items-center gap-2 mt-4">    <span class="badge" aria-label="Deployed on GitHub Pages">GH Pages</span>    <span class="badge" aria-label="Mobile-first responsive design">Responsive</span>    <span class="badge" aria-label="Vanilla HTML, CSS, and JS">HTML/CSS/JS</span>  </div></header><!-- Optional banner/preview image --><div class="px-6 sm:px-10">  <div class="overflow-hidden rounded-lg border border-gray-100">    <img src="image.png" alt="Project preview" style="width: 100%; height: 220px; object-fit: cover;">  </div></div><!-- Links grid --><section class="px-6 py-6 sm:px-10 sm:py-8">  <h2 class="sr-only">Lessons</h2>  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">    <a class="link-tile" href="lesson5_interactive/index.html">      <div class="text-sm text-blue-200 font-semibold uppercase tracking-wide">Lesson 5</div>      <div class="mt-1 text-lg font-semibold">Interactive</div>      <p class="mt-1 text-sm text-blue-100">Basic DOM events and scripts.</p>    </a>    <a class="link-tile" href="lesson6_layouts/index.html">      <div class="text-sm text-blue-200 font-semibold uppercase tracking-wide">Lesson 6</div>      <div class="mt-1 text-lg font-semibold">Layouts</div>      <p class="mt-1 text-sm text-blue-100">Flexbox and CSS layout patterns.</p>    </a>    <a class="link-tile" href="lesson7_responsive/index.html">      <div class="text-sm text-blue-200 font-semibold uppercase tracking-wide">Lesson 7</div>      <div class="mt-1 text-lg font-semibold">Responsive</div>      <p class="mt-1 text-sm text-blue-100">Media queries and adaptive design.</p>    </a>    <a class="link-tile" href="lesson8_transforms_filters/index.html">      <div class="text-sm text-blue-200 font-semibold uppercase tracking-wide">Lesson 8</div>      <div class="mt-1 text-lg font-semibold">Transforms & Filters</div>      <p class="mt-1 text-sm text-blue-100">CSS transforms, transitions, filters.</p>    </a>  </div></section><!-- Footer --><footer class="footer px-6 pb-6 sm:px-10 sm:pb-8 text-sm text-gray-500">  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">    <p>&copy; <span id="year"></span> IST 250. All rights reserved.</p>    <p>Deployed at      <a href="https://mhilesradio-op29.github.io/Bringing-it-all-together-IST-250/" rel="noopener">GitHub Pages</a>    </p>  </div></footer>
-
+  <header class="site-header">
+    <div class="container">
+      <h1>Bringing it all together - IST 250</h1>
+      <nav class="nav">
+        <a href="./index.html" aria-current="page">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section>
+      <h2>Welcome</h2>
+      <p>Plain HTML site for GitHub Pages with correct relative paths.</p>
+      <p>
+        <a class="button" href="./files/Bringing-it-all-together-IST-250.zip" download>Download ZIP</a>
+      </p>
+      <img src="./images/example.jpg" alt="Example image">
+    </section>
+<section>  <h3>Lessons</h3>
+  <ul>    <li><a href="./lesson5.html">Lesson 5 - Interactive</a></li>    <li><a href="./lesson6.html">Lesson 6 - Layouts</a></li>    <li><a href="./lesson7.html">Lesson 7 - Responsive</a></li>    <li><a href="./lesson8.html">Lesson 8 - Transforms & Filters</a></li>  </ul>
+</section>
   </main>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 IST 250. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
+:root {
+  --bg: #0a0f1a;
+  --fg: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --card: #111827;
+  --border: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-header, .site-footer {
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.12));
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0 1rem;
+}
+
+.nav a {
+  color: var(--fg);
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.nav a[aria-current="page"], .nav a:hover {
+  background: #0b1220;
+  color: var(--accent);
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin: 1rem 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #001019;
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
