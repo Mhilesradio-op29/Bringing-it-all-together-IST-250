@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IST 250 Projects</title>
+  <!-- Tailwind CSS CDN for basic styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for the Inter font and basic body padding */
+    body {
+      font-family: 'Inter', sans-serif;
+      padding: 1.5rem; /* Equivalent to p-6 in Tailwind */
+      background-color: #f3f4f6; /* Light gray background */
+      min-height: 100vh; /* Ensure body takes full viewport height */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 960px; /* Max width for content */
+      width: 100%; /* Full width on smaller screens */
+      background-color: white;
+      padding: 2rem; /* p-8 */
+      border-radius: 0.5rem; /* rounded-lg */
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    }
+    h1 {
+      font-size: 2.25rem; /* text-4xl */
+      font-weight: 700; /* font-bold */
+      color: #1f2937; /* gray-900 */
+      margin-bottom: 1.5rem; /* mb-6 */
+      text-align: center;
+    }
+    ul {
+      list-style-type: none; /* No default bullet points */
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 0.75rem; /* mb-3 */
+    }
+    a {
+      display: block; /* Make links block level for better click area */
+      padding: 0.75rem 1rem; /* px-4 py-3 */
+      background-color: #3b82f6; /* blue-500 */
+      color: white;
+      text-decoration: none;
+      border-radius: 0.375rem; /* rounded-md */
+      transition: background-color 0.2s ease-in-out;
+      text-align: center;
+      font-weight: 500; /* font-medium */
+    }
+    a:hover {
+      background-color: #2563eb; /* blue-600 */
+    }
+    /* Responsive adjustments */
+    @media (min-width: 640px) { /* sm breakpoint */
+      .container {
+        padding: 2.5rem; /* sm:p-10 */
+      }
+      h1 {
+        font-size: 3rem; /* sm:text-5xl */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>IST 250 Projects</h1>
+    <ul>
+      <li><a href="lesson5_interactive/index.html">Lesson 5: Interactive</a></li>
+      <li><a href="lesson6_layouts/index.html">Lesson 6: Layouts</a></li>
+      <li><a href="lesson7_responsive/index.html">Lesson 7: Responsive</a></li>
+      <li><a href="lesson8_transforms_filters/index.html">Lesson 8: Transforms & Filters</a></li>
+    </ul>
+  </div>
+</body>
+</html>
